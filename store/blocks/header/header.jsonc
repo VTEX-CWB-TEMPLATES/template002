@@ -1,0 +1,508 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#contact-desktop",
+      "header-row#logo-desktop",
+      "header-row#menu-desktop"
+    ]
+  },
+  //CONTACT
+  "header-row#contact-desktop": {
+    "children": [
+      "header-spacer",
+      "vtex.menu@2.x:menu#contactmenu"
+      // "rich-text#attendance",
+      // "rich-text#talk",
+      // "rich-text#login",
+      // "rich-text#pedidos",
+      // "rich-text#cadastro"
+    ]
+  },
+  "vtex.menu@2.x:menu#contactmenu":{
+    "children":[
+      "menu-item#phone",
+      "menu-item#talk",
+      "menu-item#logintop",
+      "menu-item#requests",
+      "menu-item#register"
+
+    ],
+    "props": {
+      "blockClass": "menu-contact",
+      "inverted": "true"
+    }
+  },
+  "menu-item#phone":{
+    "props":{
+      "text": "ATENDIMENTO (34) 3246-3332"
+    }
+  },
+  "menu-item#talk":{
+    "props":{
+      "text": "Fale Conosco"
+    }
+  },
+  "menu-item#logintop":{
+    "props":{
+      "text": "Faça seu Login ou Cadastre-se"
+    }
+  },
+  "menu-item#requests":{
+    "props":{
+      "text": "MEUS PEDIDOS"
+    }
+  },
+  "menu-item#register":{
+    "props":{
+      "text": "MEU CADASTRO"
+    }
+  },
+
+
+  // "rich-text#attendance":{
+  //   "props":{
+  //     "text": "ATENDIMENTO (34) 3246-3332",
+  //     "textColor": "c-on-base",
+  //     "font": "t-heading-1",
+  //     "blockClass": "pad-contact"
+  //   }
+  // },
+  // "rich-text#talk":{
+  //   "props": {
+  //     "text": "[Fale Conosco](https://help.vtex.com/en/faq/what-is-vtex-io)",
+  //     "font": "t-heading-1",
+  //     "textColor": "c-on-base",
+  //     "blockClass": "pad-contact"
+  //   }
+  // },
+  // "rich-text#login":{
+  //   "props":{
+  //     "text": "[Entre ou Cadastre-se](https://help.vtex.com/en/faq/what-is-vtex-io)",
+  //     "font": "t-heading-1",
+  //     "textColor": "c-on-base",
+  //     "blockClass": "pad-contact"
+  //   }
+  // },
+  // "rich-text#pedidos":{
+  //   "props":{
+  //     "text": "[Meus Pedidos](https://help.vtex.com/en/faq/what-is-vtex-io)",
+  //     "font": "t-heading-1",
+  //     "textColor": "c-on-base",
+  //     "blockClass": "pad-contact"
+  //   }
+  // },
+  // "rich-text#cadastro":{
+  //   "props":{
+  //     "text": "[Meu Cadastro](https://help.vtex.com/en/faq/what-is-vtex-io)",
+  //     "font": "t-heading-1",
+  //     "textColor": "c-on-base",
+  //     "blockClass": "pad-contact"
+  //   }
+  // },
+
+
+  //LOGO
+  "header-row#logo-desktop": {
+    "children": [
+      "logo",
+      // "image#face",
+      // "image#insta",
+      // "image#twitter",
+      // "image#pinterest",
+      "search-bar",
+      "header-spacer",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+  "search-bar":{
+    "props":{
+      "iconClasses": "searchicon"
+    }
+  },
+
+
+  //MENU
+  "header-row#menu-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#prior"
+    ],
+    "props": {
+      "blockClass": "menu-link",
+      "inverted": "true"
+    }
+  },
+
+  "vtex.menu@2.x:menu#prior": {
+    "children": [
+      "menu-item#all",
+      "menu-item#spotlights",
+      "menu-item#cloth",
+      "menu-item#acessories",
+      "menu-item#beach",
+      "menu-item#offer"
+    ]
+  },
+
+  "menu-item#all":{
+    "blocks":[
+      "vtex.menu@2.x:submenu#allsub"
+    ],
+    "props": {
+      "text": "TODOS OS DEPARTAMENTOS"
+    }
+  },
+  "vtex.menu@2.x:submenu#allsub":{
+    "children":[
+      "flex-layout.row#alldepartmentbox"
+    ]
+  },
+  "flex-layout.row#alldepartmentbox":{
+    "children":[
+      "flex-layout.col#allcloth",
+      "flex-layout.col#allacessories",
+      "flex-layout.col#allbeach"
+    ]
+  },
+  "flex-layout.col#allcloth":{
+    "children":[
+      // "rich-text#allclothtitle"
+      "vtex.menu@2.x:menu#clothsubmenu"
+    ]
+  },
+  "flex-layout.col#allacessories":{
+    "children":[
+      // "rich-text#allacessoriestitle",
+      "vtex.menu@2.x:menu#acessoriessubmenu"
+    ]
+  },
+  "flex-layout.col#allbeach":{
+    "children":[
+      // "rich-text#allbeachtitle"
+      "vtex.menu@2.x:menu#beachsubmenu"
+    ]
+  },
+
+  // "rich-text#allclothtitle":{
+  //   "props":{
+  //     "text": "[Roupas](#)"
+  //   }
+  // },
+  // "rich-text#allacessoriestitle":{
+  //   "props":{
+  //     "text": "[Acessórios](#)"
+  //   }
+  // },
+  // "rich-text#allbeachtitle":{
+  //   "props":{
+  //     "text": "[Moda Praia](#)"
+  //   }
+  // },
+
+
+  "menu-item#spotlights":{
+    "props": {
+      "text": "NOVIDADES",
+      "blockClass": "highligthstop"
+    }
+  },
+  "menu-item#offer":{
+    "props":{
+      "text":"DESTAQUES",
+      "blockClass": "offerstop"
+    }
+  },
+  //ROUPAS
+  "menu-item#cloth":{
+    "blocks": [
+      "vtex.menu@2.x:submenu#clothsub"
+    ],
+    "props":{
+      "text": "ROUPAS"
+    }
+  },
+
+  "vtex.menu@2.x:submenu#clothsub":{
+    "children": [
+      "vtex.menu@2.x:menu#clothsubmenu"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#clothsubmenu": {
+    "children": [
+      "menu-item#blouse",
+      "menu-item#bodys",
+      "menu-item#pants",
+      "menu-item#jacket",
+      "menu-item#overalls",
+      "menu-item#skirt",
+      "menu-item#short",
+      "menu-item#dress"
+    ],
+    "props":{
+      "blockClass": "subdirection"
+    }
+  },
+
+  "menu-item#blouse":{
+    "props":{
+      "text": "Blusas"
+    }
+  },
+
+  "menu-item#bodys":{
+    "props":{
+      "text": "Bodys"
+    }
+  },
+
+  "menu-item#pants":{
+    "props":{
+      "text": "Calças"
+    }
+  },
+
+  "menu-item#jacket":{
+    "props":{
+      "text": "Jaquetas"
+    }
+  },
+
+  "menu-item#overalls":{
+    "props":{
+      "text": "Macacões"
+    }
+  },
+  "menu-item#skirt":{
+    "props":{
+      "text": "Saias"
+    }
+  },
+
+  "menu-item#short":{
+    "props":{
+      "text": "Shorts"
+    }
+  },
+
+  "menu-item#dress":{
+    "props":{
+      "text": "Vestidos"
+    }
+  },
+
+
+  //ACESSÓRIOS
+  "menu-item#acessories":{
+    "blocks": [
+      "vtex.menu@2.x:submenu#acessoriessub"
+    ],
+    "props":{
+      "text": "ACESSÓRIOS"
+    }
+  },
+  "menu-item#beach":{
+    "blocks": [
+      "vtex.menu@2.x:submenu#beachsub"
+    ],
+    "props":{
+      "text": "MODA PRAIA"
+    }
+  },
+  "vtex.menu@2.x:submenu#acessoriessub":{
+    "children": [
+      "vtex.menu@2.x:menu#acessoriessubmenu"
+    ]
+  },
+  "vtex.menu@2.x:menu#acessoriessubmenu":{
+    "children":[
+      "menu-item#belt",
+      "menu-item#tracks",
+      "menu-item#collar"
+    ],
+    "props":{
+      "blockClass": "subdirection"
+    }
+  },
+
+  "menu-item#belt":{
+    "props":{
+      "text": "Cintos"
+    }
+  },
+  "menu-item#tracks":{
+    "props":{
+      "text": "Faixas"
+    }
+  },
+  "menu-item#collar":{
+    "props":{
+      "text":"Gola Tricot"
+    }
+  },
+  "vtex.menu@2.x:submenu#beachsub":{
+    "children": [
+      "vtex.menu@2.x:menu#beachsubmenu"
+    ]
+  },
+  "vtex.menu@2.x:menu#beachsubmenu":{
+    "children":[
+      "menu-item#bikini",
+      "menu-item#pareo",
+      "menu-item#exitdress",
+      "menu-item#body"
+    ],
+    "props":{
+        "blockClass": "subdirection"
+    }
+  },
+
+  "menu-item#bikini":{
+    "props":{
+      "text": "Bikinis"
+    }
+  },
+  "menu-item#pareo":{
+    "props":{
+      "text": "Pareôs"
+    }
+  },
+  "menu-item#exitdress":{
+    "props":{
+      "text": "Saídas"
+    }
+  },
+  "menu-item#body":{
+    "props":{
+      "text": "Body"
+    }
+  },
+
+  
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "https://storecomponents.myvtex.com",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Go to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray",
+      "iconClasses": "MinicartIcon"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile"
+    ]
+  },
+
+  "header-row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "drawer": {
+    "children": [
+      "vtex.menu@2.x:menu#priormobile"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#priormobile": {
+    "children": [
+      //roupas
+      "menu-item#clothmobile",
+      "menu-item#blouse",
+      "menu-item#bodys",
+      "menu-item#pants",
+      "menu-item#jacket",
+      "menu-item#overalls",
+      "menu-item#skirt",
+      "menu-item#short",
+      "menu-item#dress",
+
+      //ACESSÓRIOS
+      "menu-item#acessoriesmobile",
+      "menu-item#belt",
+      "menu-item#tracks",
+      "menu-item#collar",
+
+      //MODA PRAIA
+      "menu-item#beachmobile",
+      "menu-item#bikini",
+      "menu-item#pareo",
+      "menu-item#exitdress",
+      "menu-item#body"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#clothmobile":{
+    "props":{
+      "text": "ROUPAS",
+      "blockClass": "clothmobile"
+    }
+  },
+  "menu-item#acessoriesmobile":{
+    "props":{
+      "text": "ACESSÓRIOS",
+      "blockClass": "acessoriesmobile"
+    }
+  },
+  "menu-item#beachmobile":{
+    "props":{
+      "text": "BEACH",
+      "blockClass": "beachmobile"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "https://storecomponents.myvtex.com",
+      "url": "https://www.analoren.com.br/assets/templates/2/imagens/logo-2019.png",
+      "width": "70"
+    }
+  }
+}
