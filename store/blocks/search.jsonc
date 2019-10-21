@@ -1,24 +1,54 @@
 {
   "store.search": {
-    "blocks": ["search-result"]
+    "blocks": [
+      "search-result"
+    ],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 9
+      }
+    }
   },
-
   "store.search#brand": {
-    "blocks": ["search-result"]
+    "blocks": [
+      "search-result"
+    ],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 9
+      }
+    }
   },
-
   "store.search#department": {
-    "blocks": ["search-result"]
+    "blocks": [
+      "search-result"
+    ],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 9
+      }
+    }
   },
-
   "store.search#category": {
-    "blocks": ["search-result"]
+    "blocks": [
+      "search-result"
+    ],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 9
+      }
+    }
   },
-
   "store.search#subcategory": {
-    "blocks": ["search-result"]
+    "blocks": [
+      "search-result"
+    ],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 9
+      }
+    }
   },
-
   "search-result": {
     "blocks": [
       // It's recommended to use the filter-navigator.v2 instead of the v1 (i.e. just `filter-navigator`)
@@ -69,16 +99,16 @@
       }
     }
   },
-
   "breadcrumb": {
     "props": {
       "showOnMobile": true
     }
   },
-
   "gallery": {
-    "blocks": ["product-summary.shelf"],
-    "props":{
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
       "maxItemsPerRow": 3
     }
   }

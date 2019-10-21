@@ -8,6 +8,7 @@
       "product-questions-and-answers"
     ]
   },
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
@@ -59,9 +60,15 @@
       "shipping-simulator",
       "product-separator",
       "product-description",
+      "product-specifications",
       "product-separator",
       "share#default"
     ]
+  },
+  "product-specifications":{
+    "props":{
+      "tabsMode": true
+    }
   },
   "product-identifier.product":{
     "props":{
